@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  QuilBus
+
+  Created by Michael Romanov on 5/29/24.
+  
+*/
+
+"EMPTY_FIELD" = "Field can't be empty";
+"FATAL_ERROR" = "Fatal error";
+"USER_DONT_EXIST" = "User with this email don't exists";
+"WRONG_PASSWORD" = "Wrong password";
+"SIGN_IN" = "Sign In";
+"SIGN_UP" = "Sign Up";
+"SIGN_UP2" = "Sign Up";
+"CREATE_ACCOUNT" = "Create account";
+"BACK_TO_SIGN_IN" = "Back to sign in";
+"DIFFERENT_PASSWORDS" = "Different passwords";
+"USER_EXISTS" = "User with this email already exists";
+"CITY_FROM" = "City from:";
+"CITY_TO" = "City to:";
+"FROM_DATE" = "From date:";
+"TO_DATE" = "To date:";
+"SEARCH" = "Search";
+"MAP_GET_TO" = "Get to know where you can go with us!";
+"FIND" = "Find";
+"YOUR_TICKETS" = "Your tickets:";
+"PASSWORD" = "Password:";
+"REPEAT_PASSWORD" = "Repeat password:";
+"FROM" = "From:";
+"TO" = "To:";
+"DEPARTURE_POINT" = "Departure point";
+"LANGUAGE_WARNING" = "To apply the language, restart the application";
+"DEPARTURE_NOT_FOUND" = "Selected departure point not found";
+"INTERNAL_ERROR" = "Internal error";
+"FROM_NOT_FOUND" = "City from is not found";
+"TO_NOT_FOUND" = "City to is not found";
+"NO_RESULTS_FOUND" = "No results found";
