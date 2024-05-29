@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 30px 36px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #38cc33;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="database.html">Database</a>
+    <a href="file_giagram.html">Files</a>
+    <a class="active" href="requirements.html">Requirements</a>
+  </div>
+
+  <div class="markdown-body" style="padding-left: 30px; padding-top: 30px;">
+    <h1>
+      Requirements
+    </h1>
+    <h2>
+      Authorization &amp; authentification
+    </h2>
+    <p>Sign In:</p>
+    <ul>
+      <li>proceed to main page in case of success</li>
+      <li>show error in case of failure</li>
+    </ul>
+    <p>Sign Up:</p>
+    <ul>
+      <li>check uniqueness of login</li>
+      <li>compare <code>password</code> and <code>repeated password</code>
+      </li>
+      <li>proceed to main page in case of success</li>
+      <li>show error in case of failure</li>
+    </ul>
+    <h2>
+      Search Page (Main page)
+    </h2>
+    <ul>
+      <li>show filter bar at the top (<em>locality from</em> and <em>locality to</em> - 2 text fileds, 2 date pickers
+        for <em>date range</em>)</li>
+      <li>show search button</li>
+      <li>show results in table view with customized cells, containing info about tickets</li>
+      <li>provide possibility to book ticket</li>
+    </ul>
+    <h2>
+      Map page
+    </h2>
+    <ul>
+      <li>show map</li>
+      <li>show text field for <em>departure point</em>
+      </li>
+      <li>show find button</li>
+      <li>show error if no locality with entered name exists</li>
+      <li>if entered locality exists - show it as <strong>D</strong> - departure on the map and available localities to
+        as <strong>A</strong> - arrival</li>
+    </ul>
+    <h2>
+      Booked Ticket Page
+    </h2>
+    <ul>
+      <li>show booked tickets as table view</li>
+      <li>in customized cell show all info about ticket</li>
+      <li>make it possible to unbook ticket if it is still actual</li>
+    </ul>
+    <h2>
+      Navigation
+    </h2>
+    <ul>
+      <li>provide an app with a menu bar (Search Page, Map Page, Booked Ticket Page)</li>
+    </ul>
+    <h1>
+      User stories
+    </h1>
+    <h2>
+      Authorization &amp; authentification
+    </h2>
+    <p>As a <b>user</b>, I want to <b>sign up</b>, so that I can <b>use your app further</b></p>
+    <p>As a <b>user</b>, I want to <b>sign in</b>, so that I can <b>use your app</b></p>
+    <h2>
+      Search Page (Main page)
+    </h2>
+    <p>As a <b>user</b>, I want to <b>view tickets</b>, so that I can <b>choose appropriate one</b></p>
+    <p>As a <b>user</b>, I want to <b>filter tickets</b>, so that I can <b>easier find appropriate one</b></p>
+    <p>As a <b>user</b>, I want to <b>book chosen ticket</b>, so that I can <b>buy it later</b></p>
+    <h2>
+      Map page
+    </h2>
+    <p>As a <b>user</b>, I want to <b>see available directions from chosen locality</b>, so that I can <b>know, where I
+        can get</b></p>
+    <h2>
+      Booked Ticket Page
+    </h2>
+    <p>As a <b>user</b>, I want to <b>see booked tickets</b>, so that I can <b>make sure I booked them</b></p>
+    <p>As a <b>user</b>, I want to <b>unbook tickets I do not need (if it is available)</b>, so that <b>other people can
+        use them</b></p>
+    <h2>
+      Navigation
+    </h2>
+    <p>As a <b>user</b>, I want to <b>navigate through pages</b>, so that I can <b>get all information</b></p>
+    <h1>
+      Use case Diagram
+    </h1>
+    <img src="https://user-images.githubusercontent.com/75540967/173223863-0156f530-ff07-419b-beab-6b1384b21a13.png"
+      height="600px">
+
+  </div>
+</body>
+
+</html>
