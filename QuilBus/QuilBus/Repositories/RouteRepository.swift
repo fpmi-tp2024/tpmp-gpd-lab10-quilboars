@@ -109,6 +109,10 @@ class RouteRepository
         
         do{
             try routes = _ctxManager.Context.fetch(fetchRequest);
+            if routes != nil
+            {
+                print("ROUTES: \(routes)")
+            }
         }
         catch let error as NSError{
             print("Get routes by to and from locality name request failed with error: \(error)");

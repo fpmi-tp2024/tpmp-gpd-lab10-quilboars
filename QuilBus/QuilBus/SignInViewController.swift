@@ -45,10 +45,11 @@ class SignInViewController: UIViewController {
         if !UserDefaults.standard.bool(forKey: "databasePopulated") {
             // Populate the database
             dataSeeder.SeedUsers()
-            dataSeeder.SeedLocalities();
-            dataSeeder.SeedRoutes();
-            dataSeeder.SeedRides();
-            dataSeeder.SeedBookedTickets();
+            dataSeeder.SeedLocalities()
+            dataSeeder.SeedRoutes()
+            dataSeeder.SeedRides()
+            dataSeeder.SeedBookedTickets()
+            
             UserDefaults.standard.set(true, forKey: "databasePopulated")
             UserDefaults.standard.synchronize()
         }

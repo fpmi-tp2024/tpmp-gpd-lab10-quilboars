@@ -57,6 +57,7 @@ class LocalityRepository
         
         do{
             try locality = _ctxManager.Context.fetch(fetchRequest);
+            print("request done")
         }
         catch let error as NSError{
             print("Get locality by name request failed with error: \(error)");

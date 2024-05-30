@@ -154,7 +154,6 @@ class TimetableViewController : NSObject, UITableViewDataSource, UITableViewDele
     public func FillTableWithData(_ beforeDate: Date, _ afterDate: Date, _ cityFromName: String, _ cityToName : String){
         let cityFrom = _localityRepository.GetLocalityByName(name: cityFromName)
         let cityTo = _localityRepository.GetLocalityByName(name: cityToName)
-
         errorLabel.text = ""
         sections.removeAll()
         numSections.removeAll()
