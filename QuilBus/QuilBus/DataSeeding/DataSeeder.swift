@@ -26,6 +26,15 @@ class DataSeeder
         _bookedTicketRepository = BookedTicketRepository(contextManager: ctxManager);
     }
     
+    public func SeedUsers()
+    {
+        _userRepository.AddUser(login: "kris@gmail.com", password: "10007558234663730");
+        _userRepository.AddUser(login: "antoni@tut.by", password: "-286585036472049644");
+        _userRepository.AddUser(login: "petr_um@outlook.com", password: "5323932752206770");
+        _userRepository.AddUser(login: "anna_e@tut.by", password: "5323932765136635");
+        _userRepository.AddUser(login: "mary@gmail.com", password: "-8636601903092422813");
+    }
+    
     public func SeedLocalities(){
         _localityRepository.AddLocality(name: "Minsk", latitude: 53.893009, longitude: 27.567444);
         _localityRepository.AddLocality(name: "Grodno", latitude: 53.669353, longitude: 23.813131);

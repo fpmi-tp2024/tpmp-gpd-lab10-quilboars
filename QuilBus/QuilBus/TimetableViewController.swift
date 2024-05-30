@@ -70,7 +70,10 @@ class TimetableViewController : NSObject, UITableViewDataSource, UITableViewDele
     
     // cell clicked
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath) as! RideTableViewCell
+        guard let cellForRow = tableView.cellForRow(at: indexPath) else{
+            return
+        }
+        let cell = cellForRow as! RideTableViewCell
         
         tableView.beginUpdates()
         cell.showBookButton()
@@ -78,7 +81,10 @@ class TimetableViewController : NSObject, UITableViewDataSource, UITableViewDele
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath) as! RideTableViewCell
+        guard let cellForRow = tableView.cellForRow(at: indexPath) else{
+            return
+        }
+        let cell = cellForRow as! RideTableViewCell
 
         tableView.beginUpdates()
         cell.hideBookButton()
