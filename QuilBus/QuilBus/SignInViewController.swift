@@ -30,7 +30,6 @@ class SignInViewController: UIViewController {
         signinButton.layer.cornerRadius = 20
         signinButton.layer.borderWidth = 2
         signinButton.layer.borderColor = UIColor.systemGreen.cgColor
-        // Do any additional setup after loading the view.
         
         //TODO: remove db initialization to erlier executed function if it appears
         let ctx = ContextRetriever.RetrieveContext();
@@ -50,8 +49,6 @@ class SignInViewController: UIViewController {
             dataSeeder.SeedRoutes();
             dataSeeder.SeedRides();
             dataSeeder.SeedBookedTickets();
-            
-            // Set the flag to indicate that the database has been populated
             UserDefaults.standard.set(true, forKey: "databasePopulated")
             UserDefaults.standard.synchronize()
         }
