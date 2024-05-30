@@ -28,7 +28,6 @@ class BookedTicketRepository
         let userBookedTickets = bookedTickets.filter{$0.user!.login == user.login}
         
         let unbookTicket=userBookedTickets.first!;
-    
         user.removeFromBookedTickets(unbookTicket);
         
         _ctxManager.Context.delete(unbookTicket);

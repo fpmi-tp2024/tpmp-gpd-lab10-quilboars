@@ -70,7 +70,10 @@ class TimetableViewController : NSObject, UITableViewDataSource, UITableViewDele
     
     // cell clicked
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath) as! RideTableViewCell
+        guard let cellForRow = tableView.cellForRow(at: indexPath) else{
+            return
+        }
+        let cell = cellForRow as! RideTableViewCell
         
         tableView.beginUpdates()
         cell.showBookButton()
@@ -78,7 +81,10 @@ class TimetableViewController : NSObject, UITableViewDataSource, UITableViewDele
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath) as! RideTableViewCell
+        guard let cellForRow = tableView.cellForRow(at: indexPath) else{
+            return
+        }
+        let cell = cellForRow as! RideTableViewCell
 
         tableView.beginUpdates()
         cell.hideBookButton()
@@ -148,7 +154,6 @@ class TimetableViewController : NSObject, UITableViewDataSource, UITableViewDele
     public func FillTableWithData(_ beforeDate: Date, _ afterDate: Date, _ cityFromName: String, _ cityToName : String){
         let cityFrom = _localityRepository.GetLocalityByName(name: cityFromName)
         let cityTo = _localityRepository.GetLocalityByName(name: cityToName)
-
         errorLabel.text = ""
         sections.removeAll()
         numSections.removeAll()

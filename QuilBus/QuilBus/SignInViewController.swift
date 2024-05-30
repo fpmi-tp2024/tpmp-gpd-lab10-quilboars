@@ -30,7 +30,6 @@ class SignInViewController: UIViewController {
         signinButton.layer.cornerRadius = 20
         signinButton.layer.borderWidth = 2
         signinButton.layer.borderColor = UIColor.systemGreen.cgColor
-        // Do any additional setup after loading the view.
         
         //TODO: remove db initialization to erlier executed function if it appears
         let ctx = ContextRetriever.RetrieveContext();
@@ -43,13 +42,17 @@ class SignInViewController: UIViewController {
         
         let dataSeeder = DataSeeder(ctxManager: CtxManager);
         
-        //ATTENTION: uncomment to add test data to db if needed
-        //But do it only once on each device
-        //dataSeeder.SeedUsers()
-        //dataSeeder.SeedLocalities();
-        //dataSeeder.SeedRoutes();
-        //dataSeeder.SeedRides();
-        //dataSeeder.SeedBookedTickets();
+        if !UserDefaults.standard.bool(forKey: "databasePopulated") {
+            // Populate the database
+            dataSeeder.SeedUsers()
+            dataSeeder.SeedLocalities()
+            dataSeeder.SeedRoutes()
+            dataSeeder.SeedRides()
+            dataSeeder.SeedBookedTickets()
+            
+            UserDefaults.standard.set(true, forKey: "databasePopulated")
+            UserDefaults.standard.synchronize()
+        }
         
         errorField.lineBreakMode = .byWordWrapping
         errorField.numberOfLines = 0
