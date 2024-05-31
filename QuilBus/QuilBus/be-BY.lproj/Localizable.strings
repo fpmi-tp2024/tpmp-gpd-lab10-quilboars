@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  QuilBus
+
+  Created by Michael Romanov on 5/29/24.
+  
+*/
+
+"EMPTY_FIELD" = "Поле не можа быць пустым";
+"FATAL_ERROR" = "Фатальная памылка";
+"USER_DONT_EXIST" = "Карыстальнік з такім email не існуе";
+"WRONG_PASSWORD" = "Няправільны пароль";
+"SIGN_IN" = "Уваход";
+"SIGN_UP" = "Зарэгістравацца";
+"SIGN_UP2" = "Рэгістрацыя";
+"CREATE_ACCOUNT" = "Стварыць уліковы запіс";
+"BACK_TO_SIGN_IN" = "Вярнуцца да рэгістрацыі";
+"DIFFERENT_PASSWORDS" = "Розныя паролі";
+"USER_EXISTS" = "Карыстальнік з такім email ўжо існуе";
+"CITY_FROM" = "З горада:";
+"CITY_TO" = "У горад:";
+"FROM_DATE" = "Ад даты:";
+"TO_DATE" = "Да даты:";
+"SEARCH" = "Пошук";
+"MAP_GET_TO" = " Даведайцеся, куды вы можаце паехаць з намі!";
+"FIND" = "Знайсці";
+"YOUR_TICKETS" = "Вашы квіткі:";
+"PASSWORD" = "Пароль:";
+"REPEAT_PASSWORD" = " Паўтарыце пароль:";
+"FROM" = "З:";
+"TO" = "У:";
+"DEPARTURE_POINT" = "Пункт адпраўлення:";
+"LANGUAGE_WARNING" = "Каб прымяніць мову перазапусціце дадатак";
+"DEPARTURE_NOT_FOUND" = "Выбраны пункт адпраўлення не знойдзен";
+"INTERNAL_ERROR" = "Унутраная памылка";
+"FROM_NOT_FOUND" = "Горад адпраўлення не знойдзены";
+"TO_NOT_FOUND" = "Горад прызначэння не знойдзены";
+"NO_RESULTS_FOUND" = "Вынікі не знойдзены";

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H1922" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BookedTicket" representedClassName=".BookedTicket" syncable="YES">
+        <attribute name="bookingTime" optional="YES" attributeType="Date" minDateTimeInterval="673970940" usesScalarValueType="NO"/>
+        <relationship name="ride" maxCount="1" deletionRule="Cascade" destinationEntity="Ride" inverseName="bookedTickets" inverseEntity="Ride"/>
+        <relationship name="user" maxCount="1" deletionRule="Deny" destinationEntity="User" inverseName="bookedTickets" inverseEntity="User"/>
+    </entity>
+    <entity name="Locality" representedClassName=".Locality" syncable="YES">
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <relationship name="routesFrom" toMany="YES" deletionRule="Nullify" destinationEntity="Route" inverseName="from" inverseEntity="Route"/>
+        <relationship name="routesTo" toMany="YES" deletionRule="Nullify" destinationEntity="Route" inverseName="to" inverseEntity="Route"/>
+    </entity>
+    <entity name="Ride" representedClassName=".Ride" syncable="YES">
+        <attribute name="arrivalTime" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="availableTickets" attributeType="Integer 32" minValueString="0" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="departureTime" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="duration" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="price" attributeType="Float" minValueString="0" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="bookedTickets" toMany="YES" deletionRule="Nullify" destinationEntity="BookedTicket" inverseName="ride" inverseEntity="BookedTicket"/>
+        <relationship name="route" maxCount="1" deletionRule="Cascade" destinationEntity="Route" inverseName="rides" inverseEntity="Route"/>
+    </entity>
+    <entity name="Route" representedClassName=".Route" syncable="YES">
+        <relationship name="from" maxCount="1" deletionRule="Cascade" destinationEntity="Locality" inverseName="routesFrom" inverseEntity="Locality"/>
+        <relationship name="rides" toMany="YES" deletionRule="Nullify" destinationEntity="Ride" inverseName="route" inverseEntity="Ride"/>
+        <relationship name="to" maxCount="1" deletionRule="Cascade" destinationEntity="Locality" inverseName="routesTo" inverseEntity="Locality"/>
+    </entity>
+    <entity name="User" representedClassName=".User" syncable="YES">
+        <attribute name="login" attributeType="String" maxValueString="100"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="role" attributeType="Integer 32" defaultValueString="1" usesScalarValueType="YES"/>
+        <relationship name="bookedTickets" toMany="YES" deletionRule="Nullify" destinationEntity="BookedTicket" inverseName="user" inverseEntity="BookedTicket"/>
+    </entity>
+    <elements>
+        <element name="BookedTicket" positionX="-54" positionY="18" width="128" height="88"/>
+        <element name="Locality" positionX="-36" positionY="27" width="128" height="118"/>
+        <element name="Ride" positionX="0" positionY="81" width="128" height="148"/>
+        <element name="Route" positionX="-18" positionY="54" width="128" height="88"/>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="103"/>
+    </elements>
+</model>

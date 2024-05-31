@@ -1,0 +1,84 @@
+
+/* Class = "UILabel"; text = "City from:"; ObjectID = "0IJ-YA-4ZY"; */
+"0IJ-YA-4ZY.text" = "City from:";
+
+/* Class = "UITextField"; placeholder = "To:"; ObjectID = "0vr-GG-WG5"; */
+"0vr-GG-WG5.placeholder" = "To:";
+
+/* Class = "UITextField"; placeholder = "Repeat password:"; ObjectID = "4Bj-K2-VOD"; */
+"4Bj-K2-VOD.placeholder" = "Repeat password:";
+
+/* Class = "UITextField"; placeholder = "Departure point"; ObjectID = "9BS-JS-Se1"; */
+"9BS-JS-Se1.placeholder" = "Departure point";
+
+/* Class = "UITextField"; placeholder = "Email:"; ObjectID = "AyL-V8-mDL"; */
+"AyL-V8-mDL.placeholder" = "Email:";
+
+/* Class = "UILabel"; text = "Selected departure point not found"; ObjectID = "Byw-jm-bsP"; */
+"Byw-jm-bsP.text" = "Selected departure point not found";
+
+/* Class = "UILabel"; text = "Sign Up"; ObjectID = "CiV-xC-OsY"; */
+"CiV-xC-OsY.text" = "Sign Up";
+
+/* Class = "UILabel"; text = "Your tickets:"; ObjectID = "Cwf-Nh-NfV"; */
+"Cwf-Nh-NfV.text" = "Your tickets:";
+
+/* Class = "UITabBarItem"; title = "Search"; ObjectID = "DZm-OT-eUw"; */
+"DZm-OT-eUw.title" = "Search";
+
+/* Class = "UITextField"; placeholder = "From:"; ObjectID = "EBV-3p-BhV"; */
+"EBV-3p-BhV.placeholder" = "From:";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "Ghp-FK-nns"; */
+"Ghp-FK-nns.title" = "Map";
+
+/* Class = "UIButton"; normalTitle = "Create account"; ObjectID = "I1N-CC-0ni"; */
+"I1N-CC-0ni.normalTitle" = "Create account";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "ML3-Nf-aaz"; */
+"ML3-Nf-aaz.normalTitle" = "Sign In";
+
+/* Class = "UIButton"; normalTitle = "Find!"; ObjectID = "QLW-5m-n4k"; */
+"QLW-5m-n4k.normalTitle" = "Find!";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "RjW-6x-D3h"; */
+"RjW-6x-D3h.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Password:"; ObjectID = "VL6-cg-swJ"; */
+"VL6-cg-swJ.placeholder" = "Password:";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "YPy-5K-4PC"; */
+"YPy-5K-4PC.normalTitle" = "Sign Up";
+
+/* Class = "UILabel"; text = "To date:"; ObjectID = "flB-Xp-B8t"; */
+"flB-Xp-B8t.text" = "To date:";
+
+/* Class = "UITabBarItem"; title = "Booked tickets"; ObjectID = "jNi-dF-KSP"; */
+"jNi-dF-KSP.title" = "Booked tickets";
+
+/* Class = "UILabel"; text = "City to:"; ObjectID = "juU-lu-0az"; */
+"juU-lu-0az.text" = "City to:";
+
+/* Class = "UITextField"; placeholder = "Password:"; ObjectID = "k9R-kc-j00"; */
+"k9R-kc-j00.placeholder" = "Password:";
+
+/* Class = "UILabel"; text = "Get to know where you can go with us!"; ObjectID = "pW9-6Q-yiq"; */
+"pW9-6Q-yiq.text" = "Get to know where you can go with us!";
+
+/* Class = "UITextField"; placeholder = "Email:"; ObjectID = "qug-li-JGf"; */
+"qug-li-JGf.placeholder" = "Email:";
+
+/* Class = "UIButton"; configuration.title = "Search"; ObjectID = "rmS-Sw-83y"; */
+"rmS-Sw-83y.configuration.title" = "Search";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rmS-Sw-83y"; */
+"rmS-Sw-83y.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Back to sign in"; ObjectID = "tYI-Ae-1wY"; */
+"tYI-Ae-1wY.normalTitle" = "Back to sign in";
+
+/* Class = "UILabel"; text = "Sign In"; ObjectID = "u4Q-19-Wqo"; */
+"u4Q-19-Wqo.text" = "Sign In";
+
+/* Class = "UILabel"; text = "From date:"; ObjectID = "wwF-Ma-BEV"; */
+"wwF-Ma-BEV.text" = "From date:";

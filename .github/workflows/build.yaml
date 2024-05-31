@@ -1,0 +1,16 @@
+name: Build
+
+on:
+  push:
+    branches:
+    - tests
+    - main
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Build
+        run: xcodebuild -project 'QuilBus/QuilBus.xcodeproj' -scheme 'QuilBus' -destination 'generic/platform=iOS' -configuration Release build CODE_SIGNING_ALLOWED=NO

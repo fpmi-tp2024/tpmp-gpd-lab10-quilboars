@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  QuilBus
+
+  Created by Michael Romanov on 5/29/24.
+  
+*/
+
+"EMPTY_FIELD" = "Поле не может быть пустым";
+"FATAL_ERROR" = "Фатальная ошибка";
+"USER_DONT_EXIST" = "Пользователь с таким email не существует";
+"WRONG_PASSWORD" = "Неверный пароль";
+"SIGN_IN" = "Вход";
+"SIGN_UP" = "Зарегистрироваться";
+"SIGN_UP2" = "Регистрация";
+"CREATE_ACCOUNT" = "Создать учетную запись";
+"BACK_TO_SIGN_IN" = "Вернуться к регистрации";
+"DIFFERENT_PASSWORDS" = "Разные пароли";
+"USER_EXISTS" = "Пользователь с таким email уже существует";
+"CITY_FROM" = "Из города:";
+"CITY_TO" = "В город:";
+"FROM_DATE" = "От даты:";
+"TO_DATE" = "До даты:";
+"SEARCH" = "Поиск";
+"MAP_GET_TO" = "Узнайте, куда вы можете поехать с нами!";
+"FIND" = "Найти";
+"YOUR_TICKETS" = "Ваши билеты:";
+"PASSWORD" = "Пароль:";
+"REPEAT_PASSWORD" = "Повторите пароль:";
+"FROM" = "От:";
+"TO" = "В:";
+"DEPARTURE_POINT" = "Пункт отправления:";
+"LANGUAGE_WARNING" = "Чтобы применить язык перезапустите приложение";
+"DEPARTURE_NOT_FOUND" = "Выбранный пункт отправления не найден";
+"INTERNAL_ERROR" = "Внутренняя ошибка";
+"FROM_NOT_FOUND" = "Город отправления не найден";
+"TO_NOT_FOUND" = "Город назначения не найден";
+"NO_RESULTS_FOUND" = "Результаты не найдены";
